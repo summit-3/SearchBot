@@ -1,0 +1,35 @@
+
+.microphone{
+  height: 30px;
+  width: 30px;
+  background-image: url("../images/mic.png");
+  background-size: 100%;
+  margin-left: 0px;
+  margin-top: 20px;
+  display: inline-block;
+ 
+} 
+@Keyframes microphone-animation{
+	0%{
+		transform: scale(0.9);
+	}
+	70%{
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0,148,255,0.4);
+		
+	}
+	100%{
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(0,148,255,0);
+	}
+}
+.record{	
+	animation: microphone-animation 1.5s infinite;
+}
+body{
+    color: darkorange;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
